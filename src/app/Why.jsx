@@ -7,9 +7,9 @@ export default function Why() {
     };
 
     return(
-        <div className="mt-12 w-full lg:w-11/12 xl:w-10/12 bg-red-600 flex flex-col px-14 py-12 md:rounded-lg">
-        <div className="w-full flex flex-col md:flex-row justify-between">
-          <div className="w-full md:w-1/3">
+      <div className="mt-12 w-full lg:w-11/12 xl:w-10/12 bg-red-600 flex flex-col md:rounded-lg">
+        <div className="w-full flex flex-col md:flex-row justify-between py-12">
+          <div className="w-full md:w-1/3 px-14">
             <p className='font-semibold text-3xl md:text-5xl text-white'>Почему</p>
             <p className='font-semibold text-3xl md:text-5xl text-white'>АвтоПрикурка?</p>
             <p className='text-white text-xl mt-6'>АвтоПрикурка — это гарантия не только качества, но и стиля</p>
@@ -27,16 +27,14 @@ export default function Why() {
 
           </div>
 
-          <div className="w-full md:w-1/2 flex space-x-4 mt-20 md:mt-0">
+          <div className="w-full md:w-1/2 flex space-x-4 mt-20 md:mt-0 px-8 md:px-14">
             <div className="w-1/2 h-full space-y-4">
               <div className="flex flex-col min-h-1/2">
                 <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.9314 19.0191C25.5892 17.2573 27.3459 14.243 27.3459 10.8125C27.3459 5.37493 22.9376 0.966687 17.5 0.966687C12.0624 0.966687 7.65421 5.37493 7.65421 10.8125C7.65421 14.243 9.4109 17.2573 12.0687 19.0191C5.51434 21.39 0.820874 27.9094 0.820874 35.5834V36.0334H1.27087H33.7292H34.1792V35.5834C34.1792 27.9094 29.4857 21.39 22.9314 19.0191ZM10.2625 10.8125C10.2625 6.82182 13.5093 3.57502 17.5 3.57502C21.4907 3.57502 24.7375 6.82182 24.7375 10.8125C24.7375 14.8032 21.4907 18.05 17.5 18.05C13.5093 18.05 10.2625 14.8032 10.2625 10.8125ZM17.5 20.6584C24.5472 20.6584 30.4329 26.1958 31.4244 33.425H3.57571C4.56722 26.1958 10.4529 20.6584 17.5 20.6584Z" fill="white" stroke="white" strokeWidth="0.9"/>
                 </svg>
 
-
-
-                  <p className='text-white mt-5'>АвтоПрикурка подберет проверенного мастера по Вашему расположению с лучшей ценой и гарантией качества работ</p>
+                <p className='text-white mt-5'>АвтоПрикурка подберет проверенного мастера по Вашему расположению с лучшей ценой и гарантией качества работ</p>
               </div>
               <div className="flex flex-col min-h-1/2">
 

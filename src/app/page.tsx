@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       {/* // Text on black bg */}
-      <div className="mt-4 w-full lg:w-11/12 xl:w-10/12 bg-zinc-800 flex flex-col px-14 py-12 rounded-lg">
+      <div className="mt-4 w-full lg:w-11/12 xl:w-10/12 bg-zinc-800 flex flex-col px-8 md:px-14 py-12 rounded-lg">
         <p className='text-xl md:text-2xl font-bold text-white'>Высококвалифицированные услуги автоэлектрика</p>
         <p className='text-xl text-white mt-7'>Далеко не каждый автовладелец может правильно прочитать и распознать предупреждающий сигнал автомобиля о той или иной неполадке в электросистемах. Затягивать с диагностикой и устранением ошибок нельзя, так как многие из них могут привести к тяжёлым поломкам и даже возгоранию ТС</p>
       </div>
