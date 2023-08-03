@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import ScrollButton from './scrollbutton'
-import Header from './Header'
-import Why from './Why'
+import ScrollButton from './Components/scrollbutton'
+import Header from './Components/Header'
+import Why from './Components/Why'
+import Form from './Components/Form'
 
 export default function Home() {
 
@@ -62,9 +63,12 @@ export default function Home() {
       {/* //Why AutoPrikurka? */}
       <Why />
 
+      <Form />
+
       <div className="mt-20 flex justify-center mb-10">
         <p className='text-white'>АвтоПрикурка © | Москва, 2023</p>
       </div>
+
       <ScrollButton />
 
     </main>
