@@ -72,6 +72,7 @@ export default function OrderForm() {
         <h1 className="text-white">FormSubmit Demo</h1>
         <form target="_blank" action="https://formsubmit.co/richyshark@gmail.com" method="POST" className="mt-4">
             <div className="px-6 flex flex-col space-y-4">
+                <input type="hidden" name="_next" value=""/>
                 <input type="email" name="email" className="" placeholder="Email Address" required/>
                 <input type="text" name="name" className="" placeholder="Full Name" required/>
                 <input placeholder="Your Message" className="" name="message" required></input>
