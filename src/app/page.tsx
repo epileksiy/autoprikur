@@ -4,6 +4,7 @@ import ScrollButton from './Components/scrollbutton'
 import Header from './Components/Header'
 import Why from './Components/Why'
 import Form from './Components/Form'
+import Services from './Components/Services'
 
 export default function Home() {
 
@@ -34,31 +35,7 @@ export default function Home() {
       </div>
 
       {/* // Mini icons with services */}
-      <div className="mt-12 w-full lg:w-11/12 xl:w-10/12 flex flex-col md:flex-row mb-4 md:space-x-6 md:px-12">
-
-        <div className="h-72 w-full md:w-1/2 flex space-x-6 mb-4 md:mb-0 px-5 md:px-0 rounded-lg">
-          <div className="w-full md:w-1/2 h-full bg-zinc-800 rounded-lg flex flex-col justify-between hover:border-4 hover:border-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div className="h-4/6 serv1 rounded-lg"></div>
-            <p className="text-white text-lg md:text-xl lg:text-2xl px-6 xl:px-14 py-5">Прикурка бустером</p>
-          </div>
-          <div className="w-full md:w-1/2 h-full bg-zinc-800 rounded-lg flex flex-col justify-between hover:border-4 hover:border-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div className="h-4/6 serv2 rounded-lg"></div>
-            <p className="text-white text-base md:text-xl lg:text-2xl px-6 xl:px-14 py-5">Зарядка аккумулятора</p>
-          </div>
-        </div>
-        
-        <div className="h-72 w-full md:w-1/2 flex space-x-6 px-5 md:px-0">
-          <div className="w-full md:w-1/2 h-full bg-zinc-800 rounded-lg flex flex-col justify-between hover:border-4 hover:border-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div className="h-4/6 serv3 rounded-lg"></div>
-            <p className="text-white text-lg md:text-xl lg:text-2xl px-6 xl:px-14 py-5">Ремонт стартеров</p>
-          </div>
-          <div className="w-full md:w-1/2 h-full bg-zinc-800 rounded-lg flex flex-col justify-between hover:border-4 hover:border-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            <div className="h-4/6 serv4 rounded-lg"></div>
-            <p className="text-white text-lg md:text-xl lg:text-2xl px-6 xl:px-14 py-5">Ремонт генераторов</p>
-          </div>
-        </div>
-
-      </div>
+      <Services/>
 
       {/* //Why AutoPrikurka? */}
       <Why />

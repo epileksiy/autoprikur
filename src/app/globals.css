@@ -57,6 +57,10 @@ body {
   background-position: 50% 50%;
 }
 
+.textService {
+  white-space: pre-line
+}
+
 .serv1{
   background-image: url('../../public/jumper.png');
   background-size: contain;
