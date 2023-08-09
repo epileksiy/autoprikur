@@ -93,7 +93,7 @@ export default function Services() {
                     <div className={`w-11/12 md:w-1/3 ${!expandedState && 'h-0'} ${expandedState && 'h-auto'} transition-all duration-500 bg-gray-100 rounded-b-3xl rounded-t-md mt-5 ${expandedState && 'p-8'}`} id='description'>
                         {expandedState && (
                             <div className="">
-                                <p className="text-xl font-semibold">{headers[servState]}</p>
+                                <p className="text-xl font-semibold textService">{headers[servState]}</p>
                                 <p className="text-lg mt-4 textService">{descriptions[servState]}</p>
                             </div>
                         )}
