@@ -33,11 +33,25 @@ export default function Services() {
                 setexpandedState(false)
             },7000);
         }
+
+        handleScroll();
     }
 
     useEffect(() => {
         console.log(servState, expandedState)
       }, [servState]);
+
+    const handleScroll = () => {
+        const uslugiElement = document.getElementById("serviceDescription");
+        if (uslugiElement) {
+          const yOffset = -70; // Adjust the offset as needed to account for any fixed header or padding
+          const y = uslugiElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          scrollTo({
+            top: y,
+            behavior: "smooth",
+          });
+        }
+    };
 
     return(
         <div className="w-full flex flex-col items-center">
@@ -66,7 +80,7 @@ export default function Services() {
                 </div>
 
             </div>
-            <div className="flex justify-center w-full">
+            <div className="flex justify-center w-full" id="serviceDescription">
                     <div className={`w-11/12 md:w-1/3 ${!expandedState && 'h-0'} ${expandedState && 'h-auto'} transition-all duration-500 bg-gray-100 rounded-b-3xl rounded-t-md mt-5 ${expandedState && 'p-8'}`} id='description'>
                         {expandedState && (
                             <div className="">
