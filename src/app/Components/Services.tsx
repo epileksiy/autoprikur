@@ -30,7 +30,16 @@ export default function Services() {
         if(val>0){
             setexpandedState(true);
             timeoutRef.current = setTimeout(()=>{
-                setexpandedState(false)
+                setexpandedState(false);
+                const uslugiElement = document.getElementById("allServices");
+                if (uslugiElement) {
+                  const yOffset = -70; // Adjust the offset as needed to account for any fixed header or padding
+                  const y = uslugiElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  scrollTo({
+                    top: y,
+                    behavior: "smooth",
+                  });
+                };
             },7000);
         }
 
@@ -54,7 +63,7 @@ export default function Services() {
     };
 
     return(
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center" id="allServices">
             <div className="mt-12 w-full lg:w-11/12 xl:w-10/12 flex flex-col md:flex-row mb-4 md:space-x-6 md:px-12" id='services'>
 
                 <div className="h-72 w-full md:w-1/2 flex space-x-6 mb-4 md:mb-0 px-5 md:px-0 rounded-lg">
