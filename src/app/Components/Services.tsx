@@ -9,7 +9,7 @@ export default function Services() {
     const [expandedState,setexpandedState] = useState(false);
 
     const headers = ['',
-    'Не заводится машина?\nНе волнуйтесь!',
+    `Не заводится машина?\nНе волнуйтесь!`,
     'Разрядился аккумулятор?',
     'Стартер вашего автомобиля сломался?',
     'Генератор вышел из строя?'
