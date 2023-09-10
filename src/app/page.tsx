@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import Why from './Components/Why'
 import Form from './Components/Form'
 import Services from './Components/Services'
+import Gallery from './Components/Gallery'
 
 export default function Home() {
 
@@ -40,7 +41,10 @@ export default function Home() {
       {/* //Why AutoPrikurka? */}
       <Why />
 
+      <Gallery />
+
       <Form />
+
 
       <div className="mt-20 flex justify-center mb-10">
         <p className='text-white'>АвтоПрикурка © | Москва, 2023</p>

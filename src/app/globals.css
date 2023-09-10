@@ -88,3 +88,8 @@ body {
   background-repeat: no-repeat;
   background-position: 120% 75%;
 }
+
+.carousel-img {
+  width: 50%;
+  object-fit: cover; 
+}
