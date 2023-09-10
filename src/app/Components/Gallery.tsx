@@ -100,7 +100,7 @@ export default function WorksGallery() {
           <img 
             src={`gallery/${works[activeIndex].img}`}
             alt={works[activeIndex].title}
-            className="rounded-lg mb-4 w-2/4 mx-auto"
+            className="rounded-lg mb-4 w-5/6 md:w-2/4 mx-auto"
           />
           <h3 className="text-xl font-bold mb-2">
             <span className='text-red-600'>{works[activeIndex].model}</span>{works[activeIndex].title}  
